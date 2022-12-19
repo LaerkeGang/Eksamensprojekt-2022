@@ -1,0 +1,485 @@
+/*=============================================================================================
+==========================================   MOBIL   ==========================================
+=============================================================================================*/
+/*-----------------------------------------
+-----------------BODY--------------------*/
+body {
+    font-family:Century Gothic;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Baskerville;
+}
+
+/*-----------------------------------------------------------------------
+BURGERMENU - https://alvarotrigo.com/blog/hamburger-menu-css/ (nr. 11)
+-----------------------------------------------------------------------*/
+.header_find_os {
+    display: none;
+}
+
+nav {
+    background-color: #FCECCA;
+    height: 6rem;
+    padding: 0 16px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    /* fade in checked menu */
+}
+
+nav .m-menu__checkbox {
+    display: none;
+}
+
+nav label.m-menu__toggle {
+    cursor: pointer;
+}
+
+nav .m-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 450px;
+    width: calc(100vw - 30px);
+    height: 100%;
+    -moz-transform: translate3d(-450px, 0, 0);
+    -o-transform: translate3d(-450px, 0, 0);
+    -ms-transform: translate3d(-450px, 0, 0);
+    -webkit-transform: translate3d(-450px, 0, 0);
+    transform: translate3d(-450px, 0, 0);
+    -moz-transition: transform 0.35s;
+    -o-transition: transform 0.35s;
+    -webkit-transition: transform 0.35s;
+    transition: transform 0.35s;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #FCECCA;
+}
+
+
+nav .m-menu__overlay {
+    background-color: rgba(103, 103, 103, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+nav .m-menu__header {
+    padding: 0 16px;
+    height: 50px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+    -ms-flex-pack: space-around;
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid var(--hvid);
+}
+
+nav .m-menu__header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+nav .m-menu .m-menu {
+    -moz-transform: translate3d(480px, 0, 0);
+    -o-transform: translate3d(480px, 0, 0);
+    -ms-transform: translate3d(480px, 0, 0);
+    -webkit-transform: translate3d(480px, 0, 0);
+    transform: translate3d(480px, 0, 0);
+}
+
+nav .m-menu ul {
+    height: 100%;
+    overflow-y: auto;
+}
+
+nav .m-menu ul li a,
+nav .m-menu ul li label {
+    display: block;
+    text-align: left;
+    padding: 0 15px;
+    line-height: 47px;
+    text-decoration: none;
+    color: #333333;
+    cursor: pointer;
+    font-size: 1rem;
+    border-bottom: 1px solid var(--hvid);
+    position: relative;
+}
+
+#a_menu {
+    padding-left: 0px
+}
+
+
+nav .m-menu ul li label.a-label__chevron::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-color: #333;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 50%;
+    margin-top: -5px;
+    right: 16px;
+}
+
+nav .m-menu ul li .-invisible {
+    border-bottom: 0;
+}
+
+nav .m-menu .m-menu label.m-menu__toggle {
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-bottom: 0;
+    padding: 0;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+nav .m-menu__checkbox:checked~.m-menu__overlay {
+    display: block;
+}
+
+nav .m-menu__checkbox:checked~.m-menu {
+    -moz-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+svg {
+    stroke: #333333;
+}
+
+/*--------------------------------------------------------------
+DROPDOWN MENU (skal skjules på mobil)
+--------------------------------------------------------------*/
+.menu_items {
+    display: none;
+}
+
+.menu_bar {
+    height: 0px;
+}
+
+/*-----------------------------------------
+-----------------LOGO--------------------*/
+.logo{
+    margin-left: 150%;
+}
+
+/*-----------------------------------------
+---------------OVERSKRIFT-----------------*/
+.forsiden{
+    text-align: center;
+    font-size: medium;
+    margin-top: 5;
+}
+
+/*-----------------------------------------
+---------------BILLEDER-------------------*/
+.forside_billede,.uv_billede{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.uv_billede{ 
+    margin-top: 60%;
+}
+/*-----------------------------------------
+---------------1 KNAP----------------------*/
+.knap1,.knap2,.knap3{
+    background-color:#BDD4EA;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+}
+
+.knap1:hover{
+    background-color: #DD8E46;
+}
+
+.knap2{
+    margin-right: 30%;
+}
+
+.knap2:hover{
+    background-color: #DD8E46;
+}
+
+.uv_link{
+    padding: 0;
+    margin: 0;
+}
+
+/*-----------------------------------------
+--------------INDHOLD----------------------*/
+
+.column {
+    float: left;
+    width: 0.1%;
+    margin-left: 25%;
+  }
+
+.row::after {
+    clear: both;
+    display: table;
+}
+
+.column_billeder{
+    width: 70px;
+    height: 170px;
+}
+
+.sol_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-left: 10%;
+    font-size: large;
+    margin-top: 5%;
+}
+
+/*-----------------------------------------
+--------------FOOTER----------------------*/
+footer {
+    text-align: center;
+    margin-left: auto;
+    background-color: #FCECCA;
+    margin-right: auto;
+    margin-top: 60%;
+}
+
+.footer_overorndet {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.footer_overskrift {
+    padding: 10px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    
+}
+
+/*-----------------------------------------
+---------------MEDIA----------------------*/
+
+/*=============================================================================================
+=========================================   MOBIL   ==========================================
+=============================================================================================*/
+
+@media screen and (max-width: 767px) {
+    .rwd{
+        display: none;
+    }
+}
+
+/*=============================================================================================
+=========================================   TABLET   ==========================================
+=============================================================================================*/
+
+@media screen and (min-width: 768px) {
+   
+/*-----------------------------------------------------
+LOGO I TOPPEN
+-----------------------------------------------------*/
+.logo{
+    margin-left: 410%;
+}
+
+/*-----------------------------------------------------
+INDHOLD
+-----------------------------------------------------*/
+.sol_section{
+    font-size: x-large;
+}
+
+.column_billeder{
+    width: 150px;
+    height: 300px;
+}
+
+.knap1{
+    width: 35%;
+    font-size: large;
+}
+
+.knap2{
+    font-size: large;
+}
+
+.column{
+    margin-left: 20%;
+}
+
+}
+
+/*=============================================================================================
+========================================   COMPUTER   =========================================
+=============================================================================================*/
+
+@media screen and (min-width: 1024px) {
+
+/*-----------------------------------------------------
+DOPDOWN MENUBAR
+-----------------------------------------------------*/
+        .menu_bar {
+            background-color: #FCECCA;
+            height: 3rem;
+        }
+
+        .menu_items {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menu_item {
+            text-decoration: none;
+            color: #FCECCA;
+            padding-right: 1.8rem;
+        }
+
+        .menu_item:hover {
+            color: #DACB8D;
+        }
+
+        .dropbutton {
+            background-color: #FCECCA;
+            color: #333333;
+            padding: 8px;
+            font-size: 1.15rem;
+            border: none;
+        }
+
+        .dropbutton:hover {
+            cursor: pointer;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            color: #333333;
+        }
+
+        .drop_punkter {
+            display: none;
+            position: absolute;
+            background-color: #FCECCA;
+            min-width: 20%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .drop_punkter a {
+            color: #333333;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .drop_punkter a:hover {
+            /*hover på dropdown punkterne*/
+            color: #333333;
+            background-color: #DD8E46;
+        }
+
+        .dropdown:hover .drop_punkter {
+            display: block;
+            /*punkterne skal stå under hinanden*/
+        }
+
+        .dropdown:hover .dropbutton {
+            /*hover på menupunktet*/
+            color: #333333;
+            background-color: #DD8E46;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .m-menu__toggle {
+            /* burgermenu skal ikke vises på pc */
+            display: none;
+        }
+
+/*-----------------------------------------------------
+LOGO I TOPPEN
+-----------------------------------------------------*/
+.logo{
+    margin-left: 950%;
+    margin-top: 20%;
+}
+
+/*-----------------------------------------------------
+INDHOLD
+-----------------------------------------------------*/
+.forside_billede{
+    width: 50%;
+}
+
+.uv_billede{
+    width: 50%;
+    margin-top: 35%;
+}
+
+.uv_link{
+    margin-left: 17%;
+    margin-top: -4.5%;
+}
+
+.column{
+    margin-left: 23%;
+}
+
+
+/*-----------------------------------------------------
+FOOTER
+-----------------------------------------------------*/
+footer {
+    margin-top: 30%;
+}
+}
+
+
+

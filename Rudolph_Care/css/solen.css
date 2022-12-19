@@ -1,0 +1,115 @@
+
+/*-----------------------------------------
+---------------INDHOLD-----------------*/
+.indholdet{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+}
+
+.sol_billeder{
+    width: 100%;
+}
+
+.sol_beskyttelse{
+    text-align: center;
+    font-size: x-small;
+}
+
+.gode_tips{
+    margin-left: 5%;
+    margin-right: 5%;
+    border-style: solid;
+    border-color: #333;
+    background-color: #DD8E46;
+    text-align: center;
+}
+
+.indholdet2{
+    margin-top: 60%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.regl{
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+}
+
+
+/*=============================================================================================
+=========================================   TABLET   ==========================================
+=============================================================================================*/
+
+@media screen and (min-width: 768px) {
+
+/*-----------------------------------------------------
+INDHOLD
+-----------------------------------------------------*/
+.forsiden{
+    font-size: x-large;
+}
+
+.indholdet,.indholdet2{
+    font-size: x-large;
+  }
+
+  .sol_section{
+    margin-left: 20%;
+  }
+
+.sol_beskyttelse,.regl{
+    font-size: large;
+}
+
+.boksene{
+    font-size: x-large;
+}
+
+}
+/*-----------------------------------------
+---------------MEDIA----------------------*/
+/*=============================================================================================
+========================================   COMPUTER   =========================================
+=============================================================================================*/
+
+@media screen and (min-width: 1024px) {
+
+/*-----------------------------------------------------
+OVERSKRIFT og BILLEDE
+-----------------------------------------------------*/
+.forsiden{
+    font-size: medium;
+}
+
+.sol_billeder{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 5%;
+}
+/*-----------------------------------------------------
+INDHOLD
+-----------------------------------------------------*/
+.indholdet,.indholdet2{
+    font-size: medium;
+}
+
+.indholdet2{
+    margin-top: 30%;
+}
+
+.sol_beskyttelse,.regl{
+    font-size: small;
+}
+
+.boksene{
+    font-size: medium;
+}
+
+.sol_section{
+    font-size: medium;
+}
+
+}
